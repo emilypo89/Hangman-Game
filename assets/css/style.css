@@ -1,0 +1,78 @@
+body {
+	font-family: 'Arvo', serif;
+}
+
+.jumbotron {
+	background-color: #FF7973;
+	font-family: 'Arvo', serif;
+	color: #fff;
+	border-bottom: solid 5px black;
+}
+
+ol,
+h3 {
+	color: black;
+	font-weight: bold;
+}
+
+#button {
+	background-color: black;
+	border-color: black;
+}
+
+
+#hangmanBox,
+#wordEntryBox {
+	border: solid 5px black;
+	text-align: center;
+}
+
+#hangmanPic {
+	position: relative;
+	border: none;
+	margin-left: 5%;
+	z-index: 0;
+}
+
+#hangmanHead,
+#hangmanBody,
+#hangmanArm1,
+#hangmanArm2,
+#hangmanLeg1,
+#hangmanLeg2 {
+	position: absolute;
+}
+
+#hangmanHead {
+	/*position: absolute;*/
+	bottom: 270px;
+	z-index: 1;
+}
+
+#hangmanBody {
+	/*position: relative;*/
+	bottom: 130px;
+	/*right: 2px;*/
+	z-index: 2;
+}
+
+#hangmanArm1 {
+	bottom: 250px;
+	left: 20px;
+	z-index: 3;
+}
+
+#hangmanArm2 {
+	bottom: 250px;
+	z-index: 4;
+}
+
+#hangmanLeg1 {
+	bottom: 150px;
+	z-index: 5;
+}
+
+#hangmanLeg1 {
+	bottom: 150px;
+	z-index: 6;
+}

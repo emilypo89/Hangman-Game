@@ -2,8 +2,59 @@
 <html>
 <head>
 	<title>Hangman Game</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+
 </head>
 <body>
 
+<!-- jumbotron header -->
+<div class="jumbotron">
+  <div class="container">
+    <h1>Hangman</h1>
+    <br>
+    <h3>Directions:</h3>
+  		<ol>
+  			<li>The object of the game is to figure out the hidden word.</li>
+			<li>Type a letter.</li>
+			<li>If that letter is correct, its position within the hidden word will be revealed.</li>
+			<li>If that letter is incorrect, you will lose a life.</li>
+			<li>You want to figure out what the word is before your lives run out.</li>  			
+
+  		</ol>
+  		<br>
+  	<p><a class="btn btn-primary btn-lg" href="#" role="button" id="button">Push to Play!</a></p>
+  </div>
+</div>
+
+<!-- game board -->
+<div class="container">
+	<div class="row">
+		<div class="col-md-6" id="hangmanBox">
+			<img src="assets/images/hangman.jpg" id="hangmanPic" class="thumbnail" alt="hangman board">
+			<img src="assets/images/head.jpg" id="hangmanHead" alt="head">
+			<img src="assets/images/body.jpg" id="hangmanBody" alt="body">
+			<img src="assets/images/arm1.jpg" id="hangmanArm1" alt="arm">
+			<img src="assets/images/arm2.jpg" id="hangmanArm2" alt="arm">
+			<img src="assets/images/leg1.jpg" id="hangmanLeg1" alt="leg">
+			<img src="assets/images/leg2.jpg" id="hangmanLeg2" alt="leg">
+		</div>
+		<div class="col-md-6" id="wordEntryBox">
+			<h1>Guess the Word Below</h1>
+			<br>
+			<br>
+			<br>
+			<p>   _ _ _ _ _ _    </p>
+			<br>
+			<br>
+			<br>
+			<p>Take a guess!</p>
+		</div>
+	</div>
+</div>
 </body>
 </html>
