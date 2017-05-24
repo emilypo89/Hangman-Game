@@ -27,7 +27,7 @@
 
   		</ol>
   		<br>
-  	<p><a class="btn btn-primary btn-lg" href="#" role="button" id="button">Push to Play!</a></p>
+  	<p><a class="btn btn-primary btn-lg" href="#" role="button" id="button" onclick="hangman();">Push to Play!</a></p>
   </div>
 </div>
 
@@ -44,15 +44,27 @@
 			<img src="assets/images/leg2.jpg" id="hangmanLeg2" alt="leg">
 		</div>
 		<div class="col-md-6" id="wordEntryBox">
+			<div class="row">
 			<h1>Guess the Word Below</h1>
 			<br>
 			<br>
 			<br>
-			<p>   _ _ _ _ _ _    </p>
+			<p id="wordHere">   _ _ _ _ _ _    </p>
 			<br>
 			<br>
-			<br>
-			<p>Take a guess!</p>
+			</div>
+			<div class="row">
+			<h2>Enter Guess Below</h2>
+				<form class="form-inline">
+				  <div class="form-group">
+				    <label class="sr-only" for="hangmanInput">Enter Guess</label>
+				    <input type="entry" class="form-control" id="letterEnter">
+				  </div>
+				  <button type="entry" class="btn btn-default" onclick="keyEnter();" ="">Enter</button>
+				</form>
+				<br>
+				<br>
+			</div>
 		</div>
 	</div>
 </div>

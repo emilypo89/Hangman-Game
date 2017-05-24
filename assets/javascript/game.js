@@ -1,23 +1,64 @@
 // Click Button to Start
 
 
-// Random Word is hidden from view
-	var words = ["peanut", "lettace", "mouse"]
+// start program
 
-	var generatedWord = words[Math.floor(Math.random() * options.length)];
-		// for (var i = 0; i < words.length; i++) {
-		//  console.log(words[i]);
-	// }
+// show random word on screen
 
-	getElementbyId("gameboard").innerHTML = generatedWord;
+function hangman(){
+	var words = ["horse", "radio", "mouse", "money"];
+
+	var generatedWord = words[Math.floor(Math.random() * words.length)];
+
+		 document.getElementById("wordHere").innerHTML=generatedWord;
 
 
-      
+
+	if (generatedWord === words[0]){
+	 	var letters = ["h", "o", "r", "s", "e"];
+
+	 }
+
+	if (generatedWord === words[1]){
+	 	var letters = ["r", "a", "d", "i", "o"];
+	 }
+
+	if (generatedWord === words[2]){
+	 	var letters = ["m", "o", "u", "s", "e"];
+	 }
+
+	if (generatedWord === words[3]){
+	 	var letters = ["m", "o", "n", "e", "y"];
+	 }
 
 // Input letters
-	document.onkeyup = function(event) {
-		var userGuess = event.key;
-	}
+		function keyEnter(){
+			var	userGuess = document.getElementById("letterEnter").value;
+
+			for(i = 0; i < letters.length; i++) {
+		 		console.log(letters[i]);
+
+			if (userGuess === letters[i]{
+				alert("you got one right");
+			}
+
+		 	else {
+		 		
+		 	}
+		 	}
+
+		 	// if (userGuess === letters[i]){
+
+		 	// }
+
+
+			}
+}
+
+	
+      
+
+
 
 // letter correct/incorrect
 
