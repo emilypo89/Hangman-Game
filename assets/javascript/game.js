@@ -6,7 +6,7 @@
 // show random word on screen
 
 function hangman(){
-	document.getElementByClass(".lifeImages").style.visibility = "hidden"
+	// document.getElementByClass(".lifeImages").style.visibility = "hidden"
 
 	var words = ["horse", "radio", "mouse", "money"];
 
@@ -18,40 +18,47 @@ function hangman(){
 
 	if (generatedWord === words[0]){
 	 	var letters = ["h", "o", "r", "s", "e"];
-
+	 	for(i = 0; i < letters.length; i++) {
+		 		console.log(letters[i]);
+		 	}
 	 }
 
 	if (generatedWord === words[1]){
 	 	var letters = ["r", "a", "d", "i", "o"];
+	 	for(i = 0; i < letters.length; i++) {
+		 		console.log(letters[i]);
+		 	}
 	 }
 
 	if (generatedWord === words[2]){
 	 	var letters = ["m", "o", "u", "s", "e"];
+	 	for(i = 0; i < letters.length; i++) {
+		 		console.log(letters[i]);
+		 	}
 	 }
 
 	if (generatedWord === words[3]){
 	 	var letters = ["m", "o", "n", "e", "y"];
+	 	for(i = 0; i < letters.length; i++) {
+		 		console.log(letters[i]);
+		 	}
 	 }
 
 // Input letters
-	// function keyEnter() {
- //    document.getElementById("letterEnter").value = userGuess;
+	function keyEnter() {
+    document.getElementById("letterEnter").value = userGuess;
 
-	object.onclick = function(){keyEnter};
-			var	keyEnter = userGuess;
-			var	userGuess = document.getElementById("letterEnter").value;
+	// object.onclick = function(){keyEnter};
+	// 		var	keyEnter = userGuess;
+	// 		var	userGuess = document.getElementById("letterEnter").value;
 
-			for(i = 0; i < letters.length; i++) {
-		 		console.log(letters[i]);
-		 	}
+		if (userGuess === letters[i]){
+			alert("you're right");
+		}
 
-			if (userGuess === letters[i]{
-				alert("you're right");
-			}
-
-		 	else {
-		 		alert("you're wrong");
-		 	}
+	 	else {
+	 		alert("you're wrong");
+	 	}
 
 
 
