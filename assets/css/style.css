@@ -13,13 +13,23 @@ ol,
 h3 {
 	color: black;
 	font-weight: bold;
+	font-family: 'Arvo', serif;
 }
 
 #button {
 	background-color: black;
 	border-color: black;
+	font-family: 'Arvo', serif;
 }
 
+#footer {
+	background-color: #FF7973;
+	font-family: 'Arvo', serif;
+	color: #fff;
+	border-top: solid 5px black;
+	text-align: center;
+	padding-top: 5px;
+}
 #userInput{
 	width: 50px;
 	height: 50px;
@@ -36,6 +46,7 @@ h3 {
 	margin: 2%;
 	margin-bottom: 10%;
 	border: solid 5px black;
+	font-family: 'Arvo', serif;
 }
 
 #div1 {
@@ -43,7 +54,7 @@ h3 {
 }
 
 
-#hangmanBox,
+#hangmanStats,
 #wordEntryBox {
 	border: solid 5px black;
 	text-align: center;
