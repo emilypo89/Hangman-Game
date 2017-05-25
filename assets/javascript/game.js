@@ -11,6 +11,7 @@
 var correctLetters = 0;
 var incorrectLetters = 0;
 var lives = 6;
+var guessCounter = 0;
 var words = ["horse", "radio", "mouse", "money"];
 var letters = {
 	w1: ["h", "o", "r", "s", "e"],
@@ -44,35 +45,50 @@ function hangman(){
 }
 
 
+
 // Input letters
 	document.onkeyup = function(event) {
         var key = event.key;
         wordCheck(key);
 	}
 
-	 function wordCheck(key){
-	 	for(var i = 0; i < generatedWord.length; i++){
-	 		if (key === generated word[i]) {
-	 			replace correctGuess[i] = key
-	 		}
-	 		//if the key == generatedWord[i]
-	 		//then we're going to replace correctGuess[i] = key;
-	 	}
+// 	if the key == generatedWord[i]
+// 	then we're going to replace correctGuess[i] = key;
+function wordCheck(key) {
+	var changeLetter = this.innerHTML;
+ 	for(var i = 0; i < generatedWord.length; i++){
+ 		if (key === generatedWord[i]) {
+ 			var bool = true;
+ 			correctGuess[i].innerHTML = changeLetter
+ 		}
+	}
 
-	 	//After we replace the dashes in the correct guess array with the key
-	 	//We will generate a new display word
+ 		wordCheck(changeLetter);
+
+// After we replace the dashes in the correct guess array with the key
+// We will generate a new display word
 	 	generateDisplayWord(correctGuess);
-	 }
+
 
 	 function generateDisplayWord(wordArray){
-	 	displayWord = "";
+	 	var displayWord = generatedWord;
 
 	 	for(var i =0 ; i< wordArray.length; i++){
 			displayWord = displayWord + "_ ";
 		}
+	}
 
-		document.getElementById("wordHere").innerHTML = displayWord;
-	 }
+// document.getElementById("wordHere").innerHTML = displayWord;
+
+
+
+
+
+
+
+
+
+
 
 // word arrays
 	// if (generatedWord === words[0]){
