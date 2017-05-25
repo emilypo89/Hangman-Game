@@ -42,16 +42,16 @@ h3 {
 	float: left;
 	width: 10px;
 	height: 10px;
-	padding: 2%;
+	padding: 5%;
 	margin: 2%;
 	margin-bottom: 10%;
 	border: solid 5px black;
 	font-family: 'Arvo', serif;
 }
 
-#div1 {
+/*#div1 {
 	margin-left: 25%;
-}
+}*/
 
 
 #hangmanStats,
