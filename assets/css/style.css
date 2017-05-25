@@ -28,6 +28,20 @@ h3 {
 	padding: 1px;
 }
 
+.hangmanDiv {
+	float: left;
+	width: 10px;
+	height: 10px;
+	padding: 2%;
+	margin: 2%;
+	margin-bottom: 10%;
+	border: solid 5px black;
+}
+
+#div1 {
+	margin-left: 25%;
+}
+
 
 #hangmanBox,
 #wordEntryBox {
