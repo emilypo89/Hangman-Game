@@ -216,13 +216,6 @@ function hangman(){
 		}
 	}
 }
-// reset function
-function reset(){
-  		displayWord = "";
-  		correctLetters =[];
-  		var incorrectGuess = 0;
-		var lives = 6;
-  	}
 
 // Game Score Stats
 var updateWins = '<p>Wins: ' + wins +'</p>';
@@ -234,6 +227,16 @@ var updateWins = '<p>Wins: ' + wins +'</p>';
 	gameStats.innerHTML = updateWins + updateLosses + updateincorrectGuess + updateLives;
 
 	var letterCounter = 0;
+
+// reset function
+function reset(){
+  		displayWord = "";
+  		correctLetters =[];
+  		var incorrectGuess = 0;
+		var lives = 6;
+  	}
+
+
 
 
 
