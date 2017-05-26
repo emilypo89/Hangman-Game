@@ -13,17 +13,6 @@ function hangman(){
 	var losses = 0;
 	var displayWord = "";
 	var correctLetters = [];
-
-	var updateWins = '<p>Wins: ' + wins +'</p>';
-	var updateLosses = '<p>Losses: ' + losses +'</p>';
-	var updateincorrectGuess = '<p>Number of Incorrect Guesses: ' + incorrectGuess +'</p>';
-	var updateLives = '<p>Number of Lives Left: ' + lives + '</p>';
-
-	var gameStats = document.getElementById("hangmanStats");
-	gameStats.innerHTML = updateWins + updateLosses + updateincorrectGuess + updateLives;
-
-	var letterCounter = 0;
-
 	
 
 // Input letters
@@ -68,6 +57,7 @@ if (generatedWord === words[0]){
 	 		lives--;
 	 	}
 
+	}
 	 	if (letterCounter === 5){
 	 		wins++;
 	 		reset();
@@ -77,9 +67,7 @@ if (generatedWord === words[0]){
 	 		losses++;
 	 		reset();
 	 	}
-
-	 }
-	}
+}
 	
 	 
 
@@ -116,6 +104,7 @@ if (generatedWord === words[0]){
 	 		lives--;
 	 	}
 
+	}
 	 	if (letterCounter === 5){
 	 		wins++;
 	 		reset();
@@ -125,9 +114,7 @@ if (generatedWord === words[0]){
 	 		losses++;
 	 		reset();
 	 	}
-
-	 }
-	}
+}
 
 	if (generatedWord === words[2]){
 	 	var lettersMouse = ["m", "o", "u", "s", "e"];
@@ -168,6 +155,8 @@ if (generatedWord === words[0]){
 	 		lives--;
 	 	}
 
+	 }
+
 	 	if (letterCounter === 5){
 	 		wins++;
 	 		reset();
@@ -177,8 +166,6 @@ if (generatedWord === words[0]){
 	 		losses++;
 	 		reset();
 	 	}
-
-	 }
 	}
 
 	if (generatedWord === words[3]){
@@ -220,6 +207,7 @@ if (generatedWord === words[0]){
 	 		lives--;
 	 	}
 
+	}
 	 	if (letterCounter === 5){
 	 		wins++;
 	 		reset();
@@ -229,15 +217,7 @@ if (generatedWord === words[0]){
 	 		losses++;
 	 		reset();
 	 	}
-
-	 }
 	}
-// }
-
-
-// }
-
-
 }
 }
 
@@ -247,7 +227,16 @@ function reset(){
   		var incorrectGuess = 0;
 		var lives = 6;
   	}
-	
+var updateWins = '<p>Wins: ' + wins +'</p>';
+	var updateLosses = '<p>Losses: ' + losses +'</p>';
+	var updateincorrectGuess = '<p>Number of Incorrect Guesses: ' + incorrectGuess +'</p>';
+	var updateLives = '<p>Number of Lives Left: ' + lives + '</p>';
+
+	var gameStats = document.getElementById("hangmanStats");
+	gameStats.innerHTML = updateWins + updateLosses + updateincorrectGuess + updateLives;
+
+	var letterCounter = 0;
+
 
 
 
